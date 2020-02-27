@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Box Sync\\Box Sync\\Projects\\DistSys1920Core\\DistSysACW\\DistSysACWClient\\DistSysACWClient.csproj": {}
+    "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\DistSysACWClient.csproj": {}
   },
   "projects": {
-    "E:\\Box Sync\\Box Sync\\Projects\\DistSys1920Core\\DistSysACW\\DistSysACWClient\\DistSysACWClient.csproj": {
+    "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\DistSysACWClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Box Sync\\Box Sync\\Projects\\DistSys1920Core\\DistSysACW\\DistSysACWClient\\DistSysACWClient.csproj",
+        "projectUniqueName": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\DistSysACWClient.csproj",
         "projectName": "DistSysACWClient",
-        "projectPath": "E:\\Box Sync\\Box Sync\\Projects\\DistSys1920Core\\DistSysACW\\DistSysACWClient\\DistSysACWClient.csproj",
-        "packagesPath": "C:\\Users\\461462.ADIR\\.nuget\\packages\\",
-        "outputPath": "E:\\Box Sync\\Box Sync\\Projects\\DistSys1920Core\\DistSysACW\\DistSysACWClient\\obj\\",
+        "projectPath": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\DistSysACWClient.csproj",
+        "packagesPath": "C:\\Users\\CSuser\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\461462.ADIR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\CSuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,10 +53,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

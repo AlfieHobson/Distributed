@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -7,6 +8,24 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace DistSysACW
 {
+
+    // Dependancie injection example.
+    /*public interface ISomeService
+    {
+        void Hello(string message);
+    }
+
+    public class SomeService : ISomeService
+    {
+        public void Hello(string message)
+        {
+            Debug.WriteLine(message + "from my service");
+        }
+    }*/
+
+
+
+
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -20,6 +39,8 @@ namespace DistSysACW
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<Models.UserContext>();
+
+            //services.AddTransient<ISomeService, SomeService>();
 
             // Extra control over error messages.
             services.AddMvc(options => {

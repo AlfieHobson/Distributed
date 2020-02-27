@@ -12,6 +12,13 @@ namespace DistSysACW.Models
         // TODO: Create a User Class for use with Entity Framework
         // Note that you can use the [key] attribute to set your ApiKey Guid as the primary key 
         #endregion
+        public string ApiKey;
+        public string UserName;
+        public string Role;
+        public User ()
+        {
+
+        }
     }
 
     #region Task13?
@@ -20,6 +27,7 @@ namespace DistSysACW.Models
 
     public static class UserDatabaseAccess
     {
+
         #region Task3 
         // TODO: Make methods which allow us to read from/write to the database 
         #endregion
