@@ -1,0 +1,11 @@
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.deps.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.runtimeconfig.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.runtimeconfig.dev.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.dll
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.pdb
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.csprojAssemblyReference.cache
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.csproj.CoreCompileInputs.cache
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.AssemblyInfoInputs.cache
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.AssemblyInfo.cs
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.dll
+C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.pdb

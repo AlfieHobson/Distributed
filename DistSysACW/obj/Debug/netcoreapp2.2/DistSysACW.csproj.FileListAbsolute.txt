@@ -1,0 +1,16 @@
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.csprojAssemblyReference.cache
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.RazorAssemblyInfo.cache
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.RazorAssemblyInfo.cs
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.AssemblyInfoInputs.cache
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.AssemblyInfo.cs
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\DistSysACW.deps.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\DistSysACW.runtimeconfig.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\DistSysACW.runtimeconfig.dev.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\DistSysACW.dll
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\DistSysACW.pdb
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.RazorTargetAssemblyInfo.cache
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.dll
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\obj\Debug\netcoreapp2.2\DistSysACW.pdb
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\CSuser\Desktop\Distributed\DistSysACW\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
