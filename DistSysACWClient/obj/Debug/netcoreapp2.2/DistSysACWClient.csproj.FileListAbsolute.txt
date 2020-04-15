@@ -9,3 +9,13 @@ C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\Dis
 C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.AssemblyInfo.cs
 C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.dll
 C:\Users\CSuser\Desktop\Distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.pdb
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.deps.json
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.runtimeconfig.json
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.runtimeconfig.dev.json
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.dll
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\bin\Debug\netcoreapp2.2\DistSysACWClient.pdb
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.csprojAssemblyReference.cache
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.AssemblyInfoInputs.cache
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.AssemblyInfo.cs
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.dll
+C:\Users\Alfie\Desktop\distributed\DistSysACWClient\obj\Debug\netcoreapp2.2\DistSysACWClient.pdb

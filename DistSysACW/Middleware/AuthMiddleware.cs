@@ -20,8 +20,20 @@ namespace DistSysACW.Middleware
         public async Task InvokeAsync(HttpContext context, Models.UserContext dbContext)
         {
             #region Task5
-            // TODO:  Find if a header ‘ApiKey’ exists, and if it does, check the database to determine if the given API Key is valid
-            //        Then set the correct roles for the User, using claims
+            // Get Key
+            var headerInfo = context.Request.Headers["ApiKey"].ToString();
+            // Get user based on Key
+            Models.User currentUser = Models.UserDatabaseAccess.getUser(dbContext, headerInfo);
+
+            // If a user was found, add claims
+            if (currentUser != null)
+            {
+                var claim = new Claim(ClaimTypes.Role, currentUser.Role);
+                var name = new Claim(ClaimTypes.Name, currentUser.UserName);
+                var keyClaim = new Claim(ClaimTypes.NameIdentifier, headerInfo);
+                context.User.AddIdentity(new ClaimsIdentity(new[] { claim, name, keyClaim }));
+            }
+
             #endregion
 
             // Call the next delegate/middleware in the pipeline

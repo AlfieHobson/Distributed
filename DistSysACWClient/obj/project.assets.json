@@ -727,23 +727,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CSuser\\.nuget\\packages\\": {},
+    "C:\\Users\\Alfie\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\DistSysACWClient.csproj",
+      "projectUniqueName": "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACWClient\\DistSysACWClient.csproj",
       "projectName": "DistSysACWClient",
-      "projectPath": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\DistSysACWClient.csproj",
-      "packagesPath": "C:\\Users\\CSuser\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACWClient\\obj\\",
+      "projectPath": "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACWClient\\DistSysACWClient.csproj",
+      "packagesPath": "C:\\Users\\Alfie\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACWClient\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\CSuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Alfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

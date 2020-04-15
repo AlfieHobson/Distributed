@@ -24,7 +24,6 @@
     ".NETCoreApp,Version=v2.2": {
       "DistSysACW/1.0.0": {
         "dependencies": {
-          "EntityFramework": "6.4.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -54,7 +53,6 @@
           "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
-      "EntityFramework/6.4.0": {},
       "Google.Protobuf/3.6.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.3"
@@ -3817,13 +3815,6 @@
       "sha512": "sha512-jAy3uHN1U9DpoT/TgLqDTEhlccn/4doOVxhSmmNsnoSsGfHT9Lwr634ac9D0YFujAhNw61nWF4UIpHyzv0aQww==",
       "path": "bouncycastle.netcore/1.8.3",
       "hashPath": "bouncycastle.netcore.1.8.3.nupkg.sha512"
-    },
-    "EntityFramework/6.4.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-7jDmcQ3jaN5G7ZJC7Ecq161zQBs/5LqRzBdZ/I4XfmSvOwteGgNjOi30kthFador4Qjo3qUU6iOB1H04GIXrpg==",
-      "path": "entityframework/6.4.0",
-      "hashPath": "entityframework.6.4.0.nupkg.sha512"
     },
     "Google.Protobuf/3.6.1": {
       "type": "package",

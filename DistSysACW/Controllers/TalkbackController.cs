@@ -7,39 +7,35 @@ using System.Net.Http.Formatting;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 
 namespace DistSysACW.Controllers
 {
-    [Route("api/talkback/")]
+    [Route("api/talkback")]
     public class TalkBackController : BaseController
     {
-        private readonly ISomeService someService;
+        //private readonly ISomeService someService;
 
         /// <summary>
         /// Constructs a TalkBack controller, taking the UserContext through dependency injection
         /// </summary>
         /// <param name="context">DbContext set as a service in Startup.cs and dependency injected</param>
-        public TalkBackController(Models.UserContext context, ISomeService someService) : base(context) {
-            this.someService = someService;
+        public TalkBackController(Models.UserContext context) : base(context) {
         }
 
 
         [HttpGet("Hello")]
         public string Get()
         {
-            someService.Hello("Hello get method");
-            return "Hello World1";
             #region TASK1
             // TODO: add api/talkback/hello response
             #endregion
+            return "Hello World";
         }
 
         [HttpGet("Sort")]
-        public IActionResult Get([FromQuery]int[] integers)
+        public IActionResult Get([FromQuery]string[] integers)
         {
-            Array.Sort(integers);
-            return Ok(integers);
-
             #region TASK1
             // TODO: 
             /*try
@@ -54,6 +50,15 @@ namespace DistSysACW.Controllers
             // sort the integers into ascending order
             // send the integers back as the api/talkback/sort response
             #endregion
+            foreach (string input in integers)
+            {
+                // Try to convert each input to integer. If fail, return bad request.
+                try { int num = int.Parse(input); }
+                catch (FormatException e) { return StatusCode(400,"Bad Request"); }
+                catch (Exception e) { return StatusCode(400, "Bad Request"); }
+            }
+            Array.Sort(integers);
+            return Ok(integers);
         }
     }
 }

@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACW\\DistSysACW.csproj": {}
+    "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACW\\DistSysACW.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACW\\DistSysACW.csproj": {
+    "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACW\\DistSysACW.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACW\\DistSysACW.csproj",
+        "projectUniqueName": "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACW\\DistSysACW.csproj",
         "projectName": "DistSysACW",
-        "projectPath": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACW\\DistSysACW.csproj",
-        "packagesPath": "C:\\Users\\CSuser\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CSuser\\Desktop\\Distributed\\DistSysACW\\obj\\",
+        "projectPath": "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACW\\DistSysACW.csproj",
+        "packagesPath": "C:\\Users\\Alfie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alfie\\Desktop\\distributed\\DistSysACW\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\CSuser\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Alfie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,10 +41,6 @@
       "frameworks": {
         "netcoreapp2.2": {
           "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.0, )"
-            },
             "Microsoft.AspNetCore.App": {
               "suppressParent": "All",
               "target": "Package",
@@ -55,6 +51,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.3, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",
