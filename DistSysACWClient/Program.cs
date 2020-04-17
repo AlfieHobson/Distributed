@@ -230,7 +230,7 @@ namespace DistSysACWClient
 
                             route = "protected/sign";
                             if (_key == "") {
-                                Console.WriteLine("You need to do a User Post or User Set first");
+                                Console.WriteLine("Client doesn’t yet have the public key");
                                 break;
                             }
                             // Add key to header
@@ -242,20 +242,17 @@ namespace DistSysACWClient
                             // Get Signed message from server
                             response = HTTPRequests.GetRequest(route, header).Result;
 
-                            string hash;
-                            // Hash the message sent
-                            using (SHA1 hashAlgo = SHA1.Create())
-                            {
-                                hash = hashMessage(hashAlgo, input[2]);
-                            }
+                            // Convert message to bytes
+                            byte[] message = Encoding.ASCII.GetBytes(input[2]);
+                            // Server Response
+                            string cleanedReponse = removeDelimeters(response.Data);
+                            byte[] serverResponse = StringToByteArray(cleanedReponse);
 
-                            // Decrypt signed message.
-                            byte[] serverResponse = Encoding.ASCII.GetBytes(response.Data);
-                            byte[] encryptedMessage = RSA.RSADecrypt(serverResponse, _publicKey);
-                            string serverHash = ByteArrayToHexString(encryptedMessage);
+                            // Verify Signature
+                            bool verified = RSA.RSAVerify(message, serverResponse, _publicKey);
 
-                            Console.WriteLine("CLIENT HASH: " + hash);
-                            Console.WriteLine("SERVER HASH: " + serverHash);
+                            if (verified) Console.WriteLine("Message was successfully signed");
+                            else Console.WriteLine("Message was not successfully signed");
                             break;
                     }
 
@@ -267,6 +264,7 @@ namespace DistSysACWClient
                 }
             }
         }
+
 
         // Appends parameters to Url.
         private static string addParams(string route, List<KeyValuePair<string, string>> parameters)
@@ -281,18 +279,6 @@ namespace DistSysACWClient
                 return route;
             }
             return route;
-        }
-
-        private static string extractKey(string keyResponse)
-        {
-            // If string starts and ends with usual response, a key is present.
-            if (keyResponse.StartsWith("<RSAKeyValue><Modulus>") && keyResponse.EndsWith("</Exponent></RSAKeyValue>"))
-            {
-                return keyResponse.Substring(22,171);
-            }
-            
-            else return null;
-
         }
 
         // Given an algorithm, will return the hash of a message.
@@ -312,6 +298,19 @@ namespace DistSysACWClient
                 foreach (byte b in byteArray) hexString += b.ToString("x2");
             }
             return hexString;
+        }
+        public static byte[] StringToByteArray(String hex) 
+        { 
+            int NumberChars = hex.Length;
+            byte[] bytes = new byte[NumberChars / 2];
+            for (int i = 0; i < NumberChars; i += 2)
+                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
+            return bytes; 
+        }
+
+        public static string removeDelimeters (string data)
+        {
+            return data.Replace("-", "");
         }
     }
     #endregion

@@ -76,7 +76,7 @@ namespace DistSysACW.Controllers
                 // Hash Message
                 string hash = hashMessage(hashAlgo, message);
                 // Byte Message
-                byte[] asciiByteMessage = Encoding.ASCII.GetBytes(hash);
+                byte[] asciiByteMessage = StringToByteArray(hash);
                 // Sign Message
                 byte[] encryptedMessage = RSA.RSASign(asciiByteMessage);
                 // Change back to string
@@ -100,9 +100,19 @@ namespace DistSysACW.Controllers
             string hexString = ""; 
             if (null != byteArray) 
             { 
-                foreach (byte b in byteArray)  hexString += b.ToString("x2"); 
-            } 
+                foreach (byte b in byteArray)  hexString += b.ToString("x2") + "-"; 
+            }
+            // Delete the last delimeter. 
+            hexString = hexString.Remove(hexString.Length - 1);
             return hexString; 
+        }
+        public static byte[] StringToByteArray(String hex)
+        {
+            int NumberChars = hex.Length;
+            byte[] bytes = new byte[NumberChars / 2];
+            for (int i = 0; i < NumberChars; i += 2)
+                bytes[i / 2] = Convert.ToByte(hex.Substring(i, 2), 16);
+            return bytes;
         }
     }
 

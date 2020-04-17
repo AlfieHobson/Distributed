@@ -28,7 +28,7 @@ namespace DistSysACWClient
         }*/
 
         // Decrypt data using the private key.
-        static public byte[] RSADecrypt(byte[] DataToDecrypt,string key) 
+        /*static public byte[] RSADecrypt(byte[] DataToDecrypt,string key) 
         {
             try 
             { 
@@ -36,8 +36,8 @@ namespace DistSysACWClient
                 using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider()) 
                 {
                     RSACryptoExtensions.FromXmlStringCore22(RSA, key);
-
-                    decryptedData = RSA.Decrypt(DataToDecrypt, false);
+                    decryptedData = RSA.Decrypt(DataToDecrypt, true);
+                    RSA.VerifyData()
                 } 
                 return decryptedData;
             } 
@@ -46,6 +46,27 @@ namespace DistSysACWClient
                 Console.WriteLine(e.ToString()); 
                 return null; 
             } 
+        }*/
+
+        static public bool RSAVerify (byte[] data, byte[] signature, string key)
+        {
+            try
+            {
+                bool verified;
+                byte[] decryptedData;
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                {
+                    RSACryptoExtensions.FromXmlStringCore22(RSA, key);
+                    verified = RSA.VerifyData(data,SHA1.Create(),signature);
+
+                }
+                return verified;
+            }
+            catch (CryptographicException e)
+            {
+                Console.WriteLine(e.ToString());
+                return false;
+            }
         }
     }
 }

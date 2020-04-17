@@ -37,7 +37,6 @@ namespace DistSysACW
             {
                 byte[] encryptedData; using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
                 {
-
                     RSA.ImportParameters(rsa.ExportParameters(false)); 
                     encryptedData = RSA.Encrypt(DataToEncrypt, false);
                 }
@@ -71,11 +70,11 @@ namespace DistSysACW
         {
             try
             {
-                byte[] encryptedData; using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
+                byte[] encryptedData;
+                using (RSACryptoServiceProvider RSA = new RSACryptoServiceProvider())
                 {
-
                     RSA.ImportParameters(rsa.ExportParameters(true));
-                    encryptedData = RSA.Encrypt(DataToEncrypt, false);
+                    encryptedData = RSA.SignHash(DataToEncrypt, HashAlgorithmName.SHA1, RSASignaturePadding.Pkcs1);
                 }
                 return encryptedData;
             }
